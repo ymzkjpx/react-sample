@@ -1,14 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './App'
 
-// import Game from './classComponent/Game'
-// ReactDOM.render(
-//   <Game patternName="classComponent" />,
-//   document.getElementById('root')
-// );
-
-import Game from './functionalComponent/Game'
 ReactDOM.render(
-  <Game patternName="functionalComponent" />,
+  <App />,
   document.getElementById('root')
 );

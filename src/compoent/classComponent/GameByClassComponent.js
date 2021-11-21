@@ -5,9 +5,7 @@ class Game extends Component {
   render() {
     return (
       <div>
-        <div>
-          <Board patternName={this.props.patternName} />
-        </div>
+        <Board patternName={this.props.patternName}/>
       </div>
     );
   }

@@ -1,12 +1,11 @@
-import React, {Component} from 'react'
+import React from 'react'
+import App from '../../App';
 import Board from './Board'
 
 const Game = ({patternName}) => {
   return (
     <div>
-      <div>
-        <Board patternName={patternName}/>
-      </div>
+      <Board patternName={patternName}/>
     </div>
   );
 }
