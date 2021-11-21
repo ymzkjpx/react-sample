@@ -1,9 +1,9 @@
 import React from 'react'
 import Square from './Square'
 
-const Board = ({gameName}) => {
+const Board = ({patternName}) => {
   const status = 'Next player: X';
-  const name = gameName + " plus";
+  const name = patternName;
 
   const renderSquare = (i) => {
     return <Square value={i}/>;
@@ -12,20 +12,20 @@ const Board = ({gameName}) => {
   return (
     <div>
       <div>
-        <p>{gameName} plus</p>
+        <p>Made by {name}</p>
       </div>
-      <div className="status">{status}</div>
-      <div className="board-row">
+      <div>{status}</div>
+      <div>
         {renderSquare(0)}
         {renderSquare(1)}
         {renderSquare(2)}
       </div>
-      <div className="board-row">
+      <div>
         {renderSquare(3)}
         {renderSquare(4)}
         {renderSquare(5)}
       </div>
-      <div className="board-row">
+      <div>
         {renderSquare(6)}
         {renderSquare(7)}
         {renderSquare(8)}
