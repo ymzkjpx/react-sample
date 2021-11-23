@@ -1,12 +1,13 @@
 import React from 'react'
-import Clock from './compoent/Clock/Clock'
 import Toggle from './compoent/toggle/Toggle'
+// import Clock from './compoent/Clock/Clock'
+import ClockFc from './compoent/Clock/ClockFc'
 
 const App = () => {
   return (
     <>
       {/* <Toggle/> */}
-      <Clock />
+      <ClockFc />
     </>
   )
 }
