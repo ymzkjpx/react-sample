@@ -1,13 +1,15 @@
 import React from 'react'
-import Toggle from './compoent/toggle/Toggle'
-// import Clock from './compoent/Clock/Clock'
-import ClockFc from './compoent/Clock/ClockFc'
+// import Toggle from './compoent/toggle/Toggle'
+// import Clock from './compoent/clock/class/Clock'
+// import ClockFc from './compoent/clock/function/ClockFc'
+import WarningPage from './compoent/warningBanner/function/WarningPage'
 
 const App = () => {
   return (
     <>
       {/* <Toggle/> */}
-      <ClockFc />
+      {/* <ClockFc /> */}
+      <WarningPage />
     </>
   )
 }
