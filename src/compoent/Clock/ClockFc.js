@@ -1,24 +1,25 @@
-import React, { useEffect } from 'react'
+import React, {useEffect, useState} from 'react'
 
-const ClockFc = () => {
-    const [zikan, setZikan] = useEffect(new Date())
-useEffect(()=>{
+const ClockFc = (props) => {
+  const [date, setDate] = useState(new Date())
 
-})
+  useEffect(() => {
+    const timerId = setInterval(()=>tick(), 1000)
+    return () => {
+      clearInterval(timerId)
+    }
+  })
 
-const tick  = () =>{
-    setZikan({
-        zikan: new Date()
-    })
-}
+  const tick = () => {
+    setDate(new Date())
+  }
 
-return(
+  return (
     <div>
-        <h2>Clock Time by FC</h2>
-        <p>It is {zikan}</p>
+      <h2>Clock Time by FC</h2>
+      <p>It is {date.toTimeString()}</p>
     </div>
-)
-
+  )
 }
 
-
+export default ClockFc
